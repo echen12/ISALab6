@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word and Definition</title>
+  </head>
+  <body>
+    <h1>Word and Definition Input</h1>
+
+    <label for="word">Word:</label>
+    <select id="word-language" name="word-language"></select>
+    <input
+      type="text"
+      id="word"
+      name="word"
+      placeholder="Enter a word"
+      required
+      lang="en"
+    />
+
+    <label for="definition">Definition:</label>
+    <select id="definition-language" name="definition-language"></select>
+    <input
+      type="text"
+      id="definition"
+      name="definition"
+      placeholder="Enter a definition"
+      required
+      lang="en"
+    />
+
+    <button id="submit-langs" type="submit">Submit</button>
+    <p id="error-code"></p>
+    <p id="error-message"></p>
+    <div id="edit-entry"></div>
+    <script type="module" src="client.js"></script>
+  </body>
+</html>
